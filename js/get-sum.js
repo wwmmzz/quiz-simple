@@ -7,6 +7,21 @@
  */
 const getSumOfTriple = (arr, start, end) => {
   // 请实现……
+  let sum = 0
+  for(let key of arr){
+    if(!(key%3)){
+      if(((start!==undefined)&&
+      (key>start)&&
+      (end!==undefined)&&
+      (key<end))||
+      ((start===undefined)&&
+      (end===undefined))){
+        sum += key
+      }
+    }
+  }
+
+  return sum
 };
 
 // * ---------------- 实现的效果：

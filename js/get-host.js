@@ -5,6 +5,8 @@
  */
 const getHostName = (url) => {
   // 请实现……
+  let pattern = /(.+):\/\/([^/]+)\//
+  return pattern.exec(url)[2]
 };
 
 // * ---------------- 实现的效果：

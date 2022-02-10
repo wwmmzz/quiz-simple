@@ -19,6 +19,9 @@
 > 禁止使用 var，不可变数据用 const 声明，可变数据用 let 声明。
 
 答：
+> - 使用对象属性代替多个if else
+> - 辅助函数拆分为多个简单函数
+> - 提取公共方法避免重复代码
 
 ## 请问以下代码做了什么事情
 
@@ -29,3 +32,10 @@ const getLoglevel = () => {
 ```
 
 答：
+```js
+ 如果localStorage.loglevel为真则返回localStorage.loglevel，否则返回'INFO'
+ 相当于: 
+       localStorage.loglevel || 'INFO'
+
+       localStorage.loglevel ? localStorage.loglevel : 'INFO'
+```

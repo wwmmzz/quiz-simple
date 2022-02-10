@@ -9,6 +9,16 @@ const getData = async () =>
 getData().then((e) => console.log(e));
 
 // * ---------------- TS 的示例
+type TTodo =   {
+  userId: number,
+  id: number,
+  title: string,
+  completed: boolean
+}
+
+const getData =async ():Promise<Array<TTodo>>=>
+  await fetch('https://jsonplaceholder.typicode.com/todos/').then((response) => response.json());
+  
 
 // * 如果你没用过 TS，可以试着快速学习一下
 

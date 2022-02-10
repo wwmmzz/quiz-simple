@@ -3,6 +3,13 @@
 
 // * ---------------- 解决下文中缺少 clone 函数的问题……
 // 在这里写代码……
+const clone = (data)=>{
+  return JSON.parse(JSON.stringify(data))
+}
+
+const clone1 = (data)=>{
+  return {person:data.person.map(t=>({...t}))}
+}
 
 // * ---------------- 实现的效果：
 

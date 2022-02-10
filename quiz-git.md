@@ -10,9 +10,18 @@ Git 是一个广泛使用的版本管理工具，适合团队开发。
 请直接在这里作答。
 
 答：
+> - git checkout -b xxx
+> - git add xxx
+> - git commit -m "xxx"
+> - git pull xxx
+> - 解决冲突 add commit
+> - git push xxx
 
 ## Q2
 
 你知道和用过哪些 Git 的方法论和技巧
 
 答：
+> - git checkout . 丢弃修改
+> - git stash 暂存修改
+> - git reset -hard hash 回退
